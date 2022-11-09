@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Prestamos.formularios;
 
 namespace Prestamos
 {
@@ -21,6 +22,12 @@ namespace Prestamos
         {
             Form frmClientes = new frmClientes();
             frmClientes.Show();
+        }
+
+        private void sucursalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmSucursales = new Sucursales();
+            frmSucursales.Show();
         }
     }
 }

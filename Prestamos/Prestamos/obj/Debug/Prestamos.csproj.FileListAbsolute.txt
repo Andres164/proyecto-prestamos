@@ -21,3 +21,16 @@ D:\Trabajo}\Prestamos\Prestamos\Prestamos\obj\Debug\Prestamos.csproj.GenerateRes
 D:\Trabajo}\Prestamos\Prestamos\Prestamos\obj\Debug\Prestamos.csproj.CoreCompileInputs.cache
 D:\Trabajo}\Prestamos\Prestamos\Prestamos\obj\Debug\Prestamos.exe
 D:\Trabajo}\Prestamos\Prestamos\Prestamos\obj\Debug\Prestamos.pdb
+D:\Repositorios\Trabajo\Prestamos\Prestamos\bin\Debug\Prestamos.exe.config
+D:\Repositorios\Trabajo\Prestamos\Prestamos\bin\Debug\Prestamos.exe
+D:\Repositorios\Trabajo\Prestamos\Prestamos\bin\Debug\Prestamos.pdb
+D:\Repositorios\Trabajo\Prestamos\Prestamos\obj\Debug\Prestamos.csproj.AssemblyReference.cache
+D:\Repositorios\Trabajo\Prestamos\Prestamos\obj\Debug\Prestamos.csproj.SuggestedBindingRedirects.cache
+D:\Repositorios\Trabajo\Prestamos\Prestamos\obj\Debug\Prestamos.frmClientes.resources
+D:\Repositorios\Trabajo\Prestamos\Prestamos\obj\Debug\Prestamos.Form1.resources
+D:\Repositorios\Trabajo\Prestamos\Prestamos\obj\Debug\Prestamos.formularios.Sucursales.resources
+D:\Repositorios\Trabajo\Prestamos\Prestamos\obj\Debug\Prestamos.Properties.Resources.resources
+D:\Repositorios\Trabajo\Prestamos\Prestamos\obj\Debug\Prestamos.csproj.GenerateResource.cache
+D:\Repositorios\Trabajo\Prestamos\Prestamos\obj\Debug\Prestamos.csproj.CoreCompileInputs.cache
+D:\Repositorios\Trabajo\Prestamos\Prestamos\obj\Debug\Prestamos.exe
+D:\Repositorios\Trabajo\Prestamos\Prestamos\obj\Debug\Prestamos.pdb
