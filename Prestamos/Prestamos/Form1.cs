@@ -29,5 +29,11 @@ namespace Prestamos
             Form frmSucursales = new Sucursales();
             frmSucursales.Show();
         }
+
+        private void prestamosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frmPrestamos = new formularios.Prestamos();
+            frmPrestamos.Show();
+        }
     }
 }

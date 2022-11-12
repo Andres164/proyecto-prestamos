@@ -27,6 +27,23 @@ namespace Prestamos
             }
             catch (Exception ex) { MessageBox.Show("No se conectó con la base de datos: " + ex.ToString()); }
         }
+        public DataTable selectPrestamos()
+        {
+            DataTable dtDatos = new DataTable();
+            try
+            {
+                this.cmd = new SqlCommand("SELECT * From Prestamos", this.cn);
+                this.dr = null;
+                this.dr = cmd.ExecuteReader();
+                dtDatos.Load(this.dr);
+                return dtDatos;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return new DataTable();
+            }
+        }
         public DataTable selectClientes()
         {
             //crear objeto data table
@@ -48,10 +65,7 @@ namespace Prestamos
                 MessageBox.Show(ex.Message);
                 return new DataTable();
             }
-            finally
-            {
-                dr.Close();
-            }
+            finally { dr.Close(); }
         }
         public string buscarCliente(string telefono)
         {

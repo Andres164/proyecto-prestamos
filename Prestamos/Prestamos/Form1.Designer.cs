@@ -64,7 +64,7 @@ namespace Prestamos
             // registroToolStripMenuItem
             // 
             this.registroToolStripMenuItem.Name = "registroToolStripMenuItem";
-            this.registroToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.registroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.registroToolStripMenuItem.Text = "Registro";
             this.registroToolStripMenuItem.Click += new System.EventHandler(this.registroToolStripMenuItem_Click);
             // 
@@ -80,6 +80,7 @@ namespace Prestamos
             this.prestamosToolStripMenuItem.Name = "prestamosToolStripMenuItem";
             this.prestamosToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.prestamosToolStripMenuItem.Text = "Prestamos";
+            this.prestamosToolStripMenuItem.Click += new System.EventHandler(this.prestamosToolStripMenuItem_Click);
             // 
             // utileriasToolStripMenuItem
             // 
@@ -94,7 +95,7 @@ namespace Prestamos
             this.ClientSize = new System.Drawing.Size(685, 454);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Prestamos";
             this.menuStrip1.ResumeLayout(false);

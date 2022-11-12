@@ -34,3 +34,5 @@ D:\Repositorios\Trabajo\Prestamos\Prestamos\obj\Debug\Prestamos.csproj.GenerateR
 D:\Repositorios\Trabajo\Prestamos\Prestamos\obj\Debug\Prestamos.csproj.CoreCompileInputs.cache
 D:\Repositorios\Trabajo\Prestamos\Prestamos\obj\Debug\Prestamos.exe
 D:\Repositorios\Trabajo\Prestamos\Prestamos\obj\Debug\Prestamos.pdb
+D:\Trabajo}\Prestamos\Prestamos\Prestamos\obj\Debug\Prestamos.formularios.Prestamos.resources
+D:\Trabajo}\Prestamos\Prestamos\Prestamos\obj\Debug\Prestamos.formularios.Sucursales.resources
