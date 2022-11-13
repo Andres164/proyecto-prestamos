@@ -33,7 +33,7 @@ namespace Prestamos
         }
 
         private void frmClientes_Load(object sender, EventArgs e) { cargarDataGridDatos(); }
-        private void btnBuscar_Click(object sender, EventArgs e) { this.txtNombre.Text = this.conexion.buscarCliente(this.txtCelular.Text); }
+        private void btnBuscar_Click(object sender, EventArgs e) { this.txtNombre.Text = this.conexion.buscarCliente(this.txtCelular.Text).Rows[0][0].ToString(); }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {

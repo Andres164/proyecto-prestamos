@@ -1,6 +1,6 @@
 ﻿namespace Prestamos.formularios
 {
-    partial class Prestamos
+    partial class PrestamosFrm
     {
         /// <summary>
         /// Required designer variable.
@@ -56,6 +56,7 @@
             this.btnNuevoPrestamo.TabIndex = 24;
             this.btnNuevoPrestamo.Text = "Nuevo prestamo";
             this.btnNuevoPrestamo.UseVisualStyleBackColor = true;
+            this.btnNuevoPrestamo.Click += new System.EventHandler(this.btnNuevoPrestamo_Click);
             // 
             // btnRefrescar
             // 
@@ -98,7 +99,7 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 28;
             // 
-            // Prestamos
+            // PrestamosFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -109,7 +110,7 @@
             this.Controls.Add(this.btnNuevoPrestamo);
             this.Controls.Add(this.btnRefrescar);
             this.Controls.Add(this.dgvPrestamos);
-            this.Name = "Prestamos";
+            this.Name = "PrestamosFrm";
             this.Text = "Prestamos";
             this.Load += new System.EventHandler(this.Prestamos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrestamos)).EndInit();

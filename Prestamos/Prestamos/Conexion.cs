@@ -27,6 +27,7 @@ namespace Prestamos
             }
             catch (Exception ex) { MessageBox.Show("No se conectó con la base de datos: " + ex.ToString()); }
         }
+        public static SqlConnection ConexionPrestamos() { return new SqlConnection("Data Source=Baio-PC\\SQLEXPRESS;Initial Catalog=prestamos;Integrated Security=True"); }
         public DataTable selectPrestamos()
         {
             DataTable dtDatos = new DataTable();
@@ -67,12 +68,12 @@ namespace Prestamos
             }
             finally { dr.Close(); }
         }
-        public string buscarCliente(string telefono)
+        public DataTable buscarCliente(string celular)
         {
             //crear objeto data table
             DataTable dtDatos = new DataTable();
             //cmd = new SqlCommand("SELECT * From CLIENTES", cn);
-            this.cmd = new SqlCommand("SELECT Nombre From CLIENTES where Celular = '" + telefono + "'", this.cn);
+            this.cmd = new SqlCommand($"SELECT * FROM clientes WHERE Celular = '{celular}'", this.cn);
 
             //CREAR OBJETO DATAREADER(ACCESO A DATOS DE SOLO LECTURA)
             this.dr = null;
@@ -80,7 +81,9 @@ namespace Prestamos
             //pasar los datos del obejto datareader al objeto datatable
             if (dr.Read())
             {
-                string registro = this.dr.GetString(0);
+                DataTable registro = new DataTable();
+                registro.Load(this.dr);
+                MessageBox.Show(registro.Rows.Count.ToString());
                 dr.Close();
                 return registro;
             }
@@ -88,7 +91,7 @@ namespace Prestamos
             {
                 MessageBox.Show("Registro no encontrado");
                 dr.Close();
-                return "Registro no encontrado";
+                return new DataTable();
             }
         }
         public string insertarSP(string Nombre, string Celular)

@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Prestamos.formularios
 {
-    public partial class Prestamos : Form
+    public partial class PrestamosFrm : Form
     {
         Conexion conexion;
-        public Prestamos()
+        public PrestamosFrm()
         {
             InitializeComponent();
             this.conexion = new Conexion();
@@ -27,6 +27,12 @@ namespace Prestamos.formularios
         private void btnRefrescar_Click(object sender, EventArgs e)
         {
             this.dgvPrestamos.DataSource = conexion.selectPrestamos();
+        }
+
+        private void btnNuevoPrestamo_Click(object sender, EventArgs e)
+        {
+            Prestamos.NuevoPrestamo NuevoPrestamo = new Prestamos.NuevoPrestamo();
+            NuevoPrestamo.Show();
         }
     }
 }

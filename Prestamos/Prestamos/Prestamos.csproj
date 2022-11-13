@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="formularios\Clientes.cs">
+    <Compile Include="Formularios\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formularios\Clientes.Designer.cs">
+    <Compile Include="Formularios\Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
@@ -59,39 +59,40 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="formularios\Prestamos\PagarPrestamo.cs">
+    <Compile Include="Formularios\PrestamosForms\NuevoPrestamo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formularios\Prestamos\PagarPrestamo.Designer.cs">
-      <DependentUpon>PagarPrestamo.cs</DependentUpon>
+    <Compile Include="Formularios\PrestamosForms\NuevoPrestamo.Designer.cs">
+      <DependentUpon>NuevoPrestamo.cs</DependentUpon>
     </Compile>
-    <Compile Include="formularios\Prestamos\Prestamos.cs">
+    <Compile Include="Formularios\PrestamosForms\PrestamosFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formularios\Prestamos\Prestamos.Designer.cs">
-      <DependentUpon>Prestamos.cs</DependentUpon>
+    <Compile Include="Formularios\PrestamosForms\PrestamosFrm.Designer.cs">
+      <DependentUpon>PrestamosFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="formularios\Sucursales.cs">
+    <Compile Include="Formularios\Sucursales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formularios\Sucursales.Designer.cs">
+    <Compile Include="Formularios\Sucursales.Designer.cs">
       <DependentUpon>Sucursales.cs</DependentUpon>
     </Compile>
+    <Compile Include="InterfazDB\Clientes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="formularios\Clientes.resx">
+    <EmbeddedResource Include="Formularios\Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formularios\Prestamos\PagarPrestamo.resx">
-      <DependentUpon>PagarPrestamo.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\PrestamosForms\NuevoPrestamo.resx">
+      <DependentUpon>NuevoPrestamo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formularios\Prestamos\Prestamos.resx">
-      <DependentUpon>Prestamos.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\PrestamosForms\PrestamosFrm.resx">
+      <DependentUpon>PrestamosFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formularios\Sucursales.resx">
+    <EmbeddedResource Include="Formularios\Sucursales.resx">
       <DependentUpon>Sucursales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

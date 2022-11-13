@@ -32,7 +32,7 @@ namespace Prestamos
 
         private void prestamosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frmPrestamos = new formularios.Prestamos();
+            Form frmPrestamos = new PrestamosFrm();
             frmPrestamos.Show();
         }
     }
