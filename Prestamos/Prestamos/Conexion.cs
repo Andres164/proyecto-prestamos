@@ -83,7 +83,6 @@ namespace Prestamos
             {
                 DataTable registro = new DataTable();
                 registro.Load(this.dr);
-                MessageBox.Show(registro.Rows.Count.ToString());
                 dr.Close();
                 return registro;
             }

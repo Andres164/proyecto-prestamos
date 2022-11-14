@@ -78,6 +78,8 @@
       <DependentUpon>Sucursales.cs</DependentUpon>
     </Compile>
     <Compile Include="InterfazDB\Clientes.cs" />
+    <Compile Include="InterfazDB\InterfazDB.cs" />
+    <Compile Include="InterfazDB\Prestamos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\Clientes.resx">

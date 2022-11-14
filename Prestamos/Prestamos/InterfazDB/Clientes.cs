@@ -9,22 +9,9 @@ using System.Data.SqlTypes;
 
 namespace Prestamos.InterfazDB
 {
-    internal class Clientes
+    internal class Clientes : InterfazDB
     {
-        SqlConnection conn;
-        public Clientes() => conn = Conexion.ConexionPrestamos();
-
-        public DataTable selectClientes() { return selectClientes("SELECT * FROM clientes"); }
-        public DataTable buscarCliente(string celular) { return selectClientes($"SELECT * FROM clientes WHERE celular = '{celular}'"); }
-
-        private DataTable selectClientes(string query)
-        {
-            using (SqlDataAdapter dataAdapter = new SqlDataAdapter(query, this.conn))
-            {
-                DataTable table = new DataTable();
-                dataAdapter.Fill(table);
-                return table;
-            }
-        }
+        public Clientes() : base("Clientes") { }
+        public DataTable buscar(string celular) { return select($"SELECT * FROM clientes WHERE celular = '{celular}'"); }
     }
 }
