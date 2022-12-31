@@ -16,7 +16,7 @@ namespace Prestamos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formularios.PrestamosFrm());
+            Application.Run(new formularios.Sucursales());
         }
     }
 }

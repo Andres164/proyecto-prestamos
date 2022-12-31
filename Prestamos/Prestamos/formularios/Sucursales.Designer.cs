@@ -77,6 +77,7 @@
             this.btnDeshacer.TabIndex = 21;
             this.btnDeshacer.Text = "Deshacer cambios";
             this.btnDeshacer.UseVisualStyleBackColor = true;
+            this.btnDeshacer.Click += new System.EventHandler(this.btnDeshacer_Click);
             // 
             // Sucursales
             // 

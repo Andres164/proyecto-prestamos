@@ -21,13 +21,13 @@ namespace Prestamos
             {
                 //Declarar la cadena (objeto) de conexión al servidor 
                 cmd = new SqlCommand();
-                cn = new SqlConnection("Data Source=Baio-PC\\SQLEXPRESS;Initial Catalog=prestamos;Integrated Security=True");
+                cn = new SqlConnection("Data Source=-PC\\SQLEXPRESS;Initial Catalog=prestamos;Integrated Security=True");
                 cn.Open();
                 MessageBox.Show("Conectado");
             }
             catch (Exception ex) { MessageBox.Show("No se conectó con la base de datos: " + ex.ToString()); }
         }
-        public static SqlConnection ConexionPrestamos() { return new SqlConnection("Data Source=Baio-PC\\SQLEXPRESS;Initial Catalog=prestamos;Integrated Security=True"); }
+        public static SqlConnection ConexionPrestamos() { return new SqlConnection("Data Source=-PC\\SQLEXPRESS;Initial Catalog=prestamos;Integrated Security=True"); }
         public DataTable selectPrestamos()
         {
             DataTable dtDatos = new DataTable();
